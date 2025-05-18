@@ -42,12 +42,12 @@ OR
    git clone https://github.com/alison089/brew-what.git
    cd brew-what
 
-##🧪 Running Tests
+## 🧪 Running Tests
 No automated tests are currently implemented. All functionality is verified manually through browser interaction.
 
 Future developers are encouraged to implement unit tests using Jest or browser testing with Cypress.
 
-##📡 API Overview
+## 📡 API Overview
 We utilize a third-party coffee image API to generate random coffee images.
 
 External API (used in main.js)
@@ -61,14 +61,14 @@ Example response:
   "file": "https://coffee.alexflipnote.dev/KXc99IJ6iRM_coffee.jpg"
 }
 
-##🐞 Known Bugs
+## 🐞 Known Bugs
 Image occasionally fails to load if API rate limit is exceeded.
 
 No image caching – reloading quickly may repeat images.
 
 Voice support not yet implemented (future enhancement idea).
 
-##🚧 Roadmap for Future Development
+## 🚧 Roadmap for Future Development
 Add favorite/save drink feature (localStorage or backend DB)
 
 Add coffee descriptions or names to each image
