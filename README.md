@@ -26,9 +26,65 @@ Our application is built to work across modern web browsers, including:
 
 # Developer Manual
 
+
 ## 🛠️ How to Install Brew What?
+You can run the site locallly using Live Server in VS Code:
+Install the Live Server extension.
+
+Open the project folder.
+
+Right-click index.html > click Open with Live Server.
+
+OR
 
 1. Clone the repository:
    ```bash
    git clone https://github.com/alison089/brew-what.git
    cd brew-what
+
+##🧪 Running Tests
+No automated tests are currently implemented. All functionality is verified manually through browser interaction.
+
+Future developers are encouraged to implement unit tests using Jest or browser testing with Cypress.
+
+##📡 API Overview
+We utilize a third-party coffee image API to generate random coffee images.
+
+External API (used in main.js)
+GET https://coffee.alexflipnote.dev/random.json
+
+Returns: a JSON object containing a URL to a random coffee image.
+
+Example response:
+
+{
+  "file": "https://coffee.alexflipnote.dev/KXc99IJ6iRM_coffee.jpg"
+}
+
+##🐞 Known Bugs
+Image occasionally fails to load if API rate limit is exceeded.
+
+No image caching – reloading quickly may repeat images.
+
+Voice support not yet implemented (future enhancement idea).
+
+##🚧 Roadmap for Future Development
+Add favorite/save drink feature (localStorage or backend DB)
+
+Add coffee descriptions or names to each image
+
+Add voice command support using Annyang (e.g., “Show me another!”)
+
+Improve mobile responsiveness and add animations
+
+Add loading spinner while fetching coffee image
+
+Build out user profile feature (track saved drinks, preferences)
+
+#📂 File Structure
+brew-what/
+├── index.html
+├── style.css
+├── main.js
+└── README.md
+
