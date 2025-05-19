@@ -62,7 +62,7 @@ Example response:
 }
 
 As well as our Nutrition Tracker API
-GET /api/nutrition-data
+GET "https://edamam.com/api/nutrition-data"
 
 
 ## Known Bugs
