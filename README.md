@@ -27,7 +27,7 @@ Our application is built to work across modern web browsers, including:
 # Developer Manual
 
 
-## 🛠️ How to Install Brew What?
+## How to Install Brew What?
 You can run the site locallly using Live Server in VS Code:
 Install the Live Server extension.
 
@@ -47,7 +47,7 @@ No automated tests are currently implemented. All functionality is verified manu
 
 Future developers are encouraged to implement unit tests using Jest or browser testing with Cypress.
 
-## 📡 API Overview
+## API Overview
 We utilize a third-party coffee image API to generate random coffee images.
 
 External API (used in main.js)
