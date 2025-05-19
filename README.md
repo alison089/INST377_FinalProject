@@ -10,7 +10,7 @@ We’re two coffee-obsessed girls from the University of Maryland who know the s
 
 ---
 
-## 🌐 Target Browsers
+## Target Browsers
 
 Our application is built to work across modern web browsers, including:
 - **iOS Safari** (latest version)
@@ -19,7 +19,7 @@ Our application is built to work across modern web browsers, including:
 
 ---
 
-## 📘 Developer Manual  
+## Developer Manual  
 [Link to Developer Manual Section](#developer-manual)
 
 ---
@@ -42,7 +42,7 @@ OR
    git clone https://github.com/alison089/brew-what.git
    cd brew-what
 
-## 🧪 Running Tests
+## Running Tests
 No automated tests are currently implemented. All functionality is verified manually through browser interaction.
 
 Future developers are encouraged to implement unit tests using Jest or browser testing with Cypress.
@@ -61,16 +61,17 @@ Example response:
   "file": "https://coffee.alexflipnote.dev/KXc99IJ6iRM_coffee.jpg"
 }
 
-## 🐞 Known Bugs
+As well as our Nutrition Tracker API
+GET /api/nutrition-data
+
+
+## Known Bugs
 Image occasionally fails to load if API rate limit is exceeded.
 
 No image caching – reloading quickly may repeat images.
 
-Voice support not yet implemented (future enhancement idea).
 
-## 🚧 Roadmap for Future Development
-Add favorite/save drink feature (localStorage or backend DB)
-
+## Roadmap for Future Development
 Add coffee descriptions or names to each image
 
 Add voice command support using Annyang (e.g., “Show me another!”)
@@ -81,10 +82,14 @@ Add loading spinner while fetching coffee image
 
 Build out user profile feature (track saved drinks, preferences)
 
-#📂 File Structure
+# File Structure
 brew-what/
 ├── index.html
+├── about.html
+├── picker.html
 ├── style.css
 ├── main.js
+├── server.js
+├── picker.js
 └── README.md
 
